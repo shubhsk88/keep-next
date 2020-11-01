@@ -7,8 +7,9 @@ const getNote = (id) => notes.find((n) => n.id === parseInt(id));
 const handler = nc()
   .get((req, res) => {
     const note = getNote(req.query.id);
+    console.log(note);
     if (!note) {
-      res.statusCode(404);
+      res.status(404);
       res.end();
       return;
     }
@@ -18,7 +19,7 @@ const handler = nc()
     const note = getNote(req.query.id);
 
     if (!note) {
-      res.statusCode(404);
+      res.status(404);
       res.end();
       return;
     }
