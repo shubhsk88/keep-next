@@ -19,6 +19,5 @@ const theme = {
     ...roboto.styles,
   },
 };
-console.log(theme);
 
 export default theme;

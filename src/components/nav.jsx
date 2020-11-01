@@ -1,3 +1,4 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 
@@ -33,3 +34,5 @@ const Nav = () => (
     </nav>
   </header>
 );
+
+export default Nav;
